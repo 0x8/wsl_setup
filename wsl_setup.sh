@@ -4,7 +4,8 @@
 
 # Must have applications
 sudo apt install terminator python3 python3-pip python-pip make gcc nmap \
-zsh gcc-multilib gdb gcc-arm-linux-gnueabi
+zsh gcc-multilib gdb gcc-5-arm-linux-gnueabi gcc-arm-linux-gnueabi \
+vim
 
 # Pip upgrade (out of date on WSL for some reason)
 sudo pip install --upgrade pip
