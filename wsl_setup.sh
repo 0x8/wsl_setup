@@ -2,6 +2,9 @@
 # Set up script for a terminator environment on WSL (Windows Subsystem for Linux)
 # Makes use of VcxServ to run an x-server natively through Windows 10.
 
+# Ensure repos are update
+sudo apt update
+
 # Must have applications
 sudo apt install terminator python3 python3-pip python-pip make gcc nmap \
 zsh gcc-multilib gdb gcc-5-arm-linux-gnueabi gcc-arm-linux-gnueabi \
@@ -33,9 +36,15 @@ git clone https://github.com/pwndbg/pwndbg ~/.pwndbg
 cd ~/.pwndbg
 ./setup.sh
 
+# dircolors fix from https://github.com/seebi/dircolors-solarized
+if [ -d "$HOME/.dircolors" ]
+then
+    echo "Found ~/.dircolors directory, moving it to backup"
+    mv "$HOME/.dircolors" "$HOME/.dircolors.backup"
+fi
+git clone https://github.com/seebi/dircolors-solarized "$HOME/.dircolors"
+
 # nptr_dotfiles
 git clone --single-branch --branch wsl https://github.com/0x8/nptr_dotfiles ~/.nptr_dotfiles
 cd ~/.nptr_dotfiles
 ./install.sh
-
-
