@@ -1,6 +1,8 @@
 # WSL Setup
 #### Ian Guibas
 
+![Image Failed To Load, see screenshot.PNG][screenshot.PNG]
+
 This script is designed around quickly altering the bash instance on wsl to
 (internally) match my preferences. This all relies upon Windows being properly
 set up with an X Server and using the Terminator terminal emulator. The X Server
