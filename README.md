@@ -1,5 +1,4 @@
 # WSL Setup
-#### By: Ian Guibas
 
 ![Image Failed To Load, see screenshot.PNG](screenshot.PNG)
 
