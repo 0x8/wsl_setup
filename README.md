@@ -1,5 +1,5 @@
 # WSL Setup
-#### Ian Guibas
+#### By: Ian Guibas
 
 ![Image Failed To Load, see screenshot.PNG](screenshot.PNG)
 
